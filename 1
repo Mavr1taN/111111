@@ -1,1 +1,17 @@
-43423432рпур
+#include <iostream>
+using namespace std;
+
+void reverseStringTail(string str, int index = 0) {
+    if (index == str.length())
+        return;
+    else {
+        reverseStringTail(str, index + 1);
+        cout << str[index];
+    }
+}
+
+// Òåñòóâàííÿ
+int main() {
+    reverseStringTail("tiger"); // Âèâåäå "regit"
+    return 0;
+}
